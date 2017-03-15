@@ -71,9 +71,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A023BBE81E79BF1D00E9C8F4 /* Build configuration list for PBXNativeTarget "CompileTimesExample" */;
 			buildPhases = (
+				A023BBEC1E79C13400E9C8F4 /* [buildtimes] Build start */,
+				A023BBED1E79C13B00E9C8F4 /* [buildtimes] Compile starts */,
 				A023BBD21E79BF1D00E9C8F4 /* Sources */,
+				A023BBEF1E79C16D00E9C8F4 /* [buildtimes] Compile ends */,
 				A023BBD31E79BF1D00E9C8F4 /* Frameworks */,
 				A023BBD41E79BF1D00E9C8F4 /* Resources */,
+				A023BBEE1E79C15600E9C8F4 /* [buildtimes] Build ends */,
 			);
 			buildRules = (
 			);
@@ -130,6 +134,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A023BBEC1E79C13400E9C8F4 /* [buildtimes] Build start */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[buildtimes] Build start";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/buildtimes/log-start.sh build";
+		};
+		A023BBED1E79C13B00E9C8F4 /* [buildtimes] Compile starts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[buildtimes] Compile starts";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/buildtimes/log-start.sh compile";
+		};
+		A023BBEE1E79C15600E9C8F4 /* [buildtimes] Build ends */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[buildtimes] Build ends";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/buildtimes/log.sh build";
+		};
+		A023BBEF1E79C16D00E9C8F4 /* [buildtimes] Compile ends */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[buildtimes] Compile ends";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/buildtimes/log.sh compile";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A023BBD21E79BF1D00E9C8F4 /* Sources */ = {
