@@ -1,6 +1,6 @@
 # Talk: `Compile Times: Breath of the Swift`
 
-By [Luis Ascorbe](https://twitter.com/lascorbe) at [NSBarcelona](https://www.meetup.com/es-ES/nsbarcelona/) on March 14th, 2016.
+By [Luis Ascorbe](https://twitter.com/lascorbe) at [NSBarcelona](https://www.meetup.com/es-ES/nsbarcelona/) on March 14th, 2017.
 
 This project's intention is to hold the slides of the talk, and also to provide an example project showing how the script shown on the talk works.
 
